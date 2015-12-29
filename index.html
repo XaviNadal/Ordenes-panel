@@ -15,27 +15,30 @@
 
   <body class="hold-transition skin-black sidebar-mini">
     <div class="wrapper">
-    <header class="main-header">
-      <!-- Logo -->
-      <a href="index.html" class="logo">
-        <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini">GP</span>
-        <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg">Good<b>People</b></span>
-      </a>
-      <!-- Header Navbar: style can be found in header.less -->
-      <nav class="navbar navbar-static-top" role="navigation">
-        <!-- Sidebar toggle button-->
-        <div class=" navbar-collapse pull-left" >
-          <ul class="nav navbar-nav">
-            <li><a href="index.html"><i class="fa fa-home margin-r-5"></i>Ordenes</a></li>
+     <header class="main-header">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> <span class="logo-lg">Good<b>People</b></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Ordenes</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Productos<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">opcion 1</a></li>
+            <li><a href="#">opcion 2</a></li>
           </ul>
-        </div>
-        <!-- Navbar Right Menu -->
-        <div class="navbar-custom-menu">
-          <ul class="nav navbar-nav">
-            <!-- Messages: style can be found in dropdown.less-->
-            <li class="dropdown messages-menu">
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown messages-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <i class="fa fa-envelope-o"></i>
                 <span class="label label-success">1</span>
@@ -113,16 +116,18 @@
                 </li>
               </ul>
             </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      </ul>
+    </div>
+  </div>
+</nav>
+   </header>
 
+ <!-- Menu Filtros-->
     <nav class="navbar navbar-inverse easy-sidebar">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle easy-sidebar-toggle" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="#">Filtros de busqueda</a>
+          <h4 class="pad"><a href="#">Filtros de busqueda</a></h4>
         </div>
         <div class="box-body">
           <ul class="nav navbar-nav">
@@ -137,13 +142,13 @@
                 <input class="form-control" type="text" placeholder="Referencia externa">
               </li>
               <br>
+
               <li>
                 <input class="form-control" type="text" placeholder="SKU">
               </li>
               <br>
 
               <li>
-                <form action="" class="form-horizontal"  role="form">
                   <div class="form-group">
                     <div class="input-group date form_date col-md-12" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                       <input class="form-control"  placeholder="Fecha de alta" size="16" type="text" value="" readonly>
@@ -151,12 +156,9 @@
                     </div>
                     <input type="hidden" id="dtp_input2" value="" /><br/>
                   </div>
-                </form>
               </li>
-              <br>
 
               <li>
-                <form action="" class="form-horizontal"  role="form">
                   <div class="form-group">
                     <div class="input-group date form_date col-md-12" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                       <input class="form-control"  placeholder="Fecha modificación" size="16" type="text" value="" readonly>
@@ -164,38 +166,30 @@
                     </div>
                     <input type="hidden" id="dtp_input2" value="" /><br/>
                   </div>
-                </form>
+              </li>
+
+              <li>
+                <div class="form-group">
+                <select class="form-control">
+                <option>Estado</option>
+                <option>Pausado</option>
+                <option>Enviado</option>
+                <option>Cancelado</option>
+                </select>
               </li>
               <br>
 
               <li>
-                <div class="dropdown">
-                  <button class="btn btn-primary left-align dropdown-toggle" type="button" data-toggle="dropdown">Estado
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Pausado</a></li>
-                    <li><a href="#">Enviado</a></li>
-                    <li><a href="#">Cancelado</a></li>
-                  </ul>
-                </div>
+                <div class="form-group">
+                <select class="form-control">
+                <option>Punto de venta</option>
+                <option>MercadoLibre</option>
+                <option>Local</option>
+                <option>Tienda Nube</option>
+                </select>
               </li>
               <br>
 
-              <li>
-                <div class="dropdown">
-                  <button class="btn btn-primary left-align dropdown-toggle" type="button" data-toggle="dropdown">Puntos de venta
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">MercdoLibre</a></li>
-                    <li><a href="#">Local</a></li>
-                    <li><a href="#">TiendaNube</a></li>
-                  </ul>
-                </div>
-              </li>
-              <br>
-              
             </form>
 
             <li>
@@ -205,24 +199,25 @@
         </div>
       </div>
     </nav>
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+<!-- Fin Menu Filtros-->
+
+  <div class="content-wrapper">
+
     <section class="content-header">
-    <div class="row no-print">
-    <div class="col-md-6">
-    <h2>
-    Listado de ordenes
-    </h2>
+      <div class="row no-print">
+        <div class="col-md-6">
+        <h2>Listado de ordenes</h2>
+      </div>
+      <div class="col-md-6">
+        <h2>
+        <a href="orden-nueva.html"> <button class="btn btn-warning pull-right" style="margin-right: 5px;">Crear orden</button></a>
+        <button class="btn  btn-secundario pull-right  easy-sidebar-toggle" style="margin-right: 5px; "> <i class="fa fa-filter margin-r-5"></i>Filtros</button>
+        <button class="btn  btn-secundario pull-right" style="margin-right: 5px;"> <i class="fa fa-share-square-o margin-r-5"></i>Exportar</button>
+        </h2>
+      </div>
     </div>
-    <div class="col-md-6">
-    <h2>            <a href="orden-nueva.html"> <button class="btn btn-warning pull-right" style="margin-right: 5px;">Crear orden</button></a>
-    <button class="btn  btn-secundario pull-right  easy-sidebar-toggle" style="margin-right: 5px; "> <i class="fa fa-filter margin-r-5"></i>Filtros</button>
-    <button class="btn  btn-secundario pull-right" style="margin-right: 5px;"> <i class="fa fa-share-square-o margin-r-5"></i>Exportar</button></h2>
-    </div>
-    </div>
-    </section>
-    <!-- Main content -->
+  </section>
+
     <section class="content">
     <!-- Info boxes -->
     <!-- TABLE: LATEST ORDERS -->
@@ -428,8 +423,5 @@
         forceParse: 0
         });
       </script>
-
-
-
     </body>
   </html>
