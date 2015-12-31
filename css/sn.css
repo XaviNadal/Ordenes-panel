@@ -204,6 +204,19 @@ hr {
     border-radius: .25em;
 }
 
+.label-tags {
+    background-color: #5cb85c;
+    padding: 6px 10px !important;
+}
+
+.label-tags > a {
+    color: #fff !important;
+}
+
+.label-tags, a:hover {
+    color: #eee !important;
+}
+
 .main-header
 {
   max-height: 100px;
@@ -385,7 +398,7 @@ hr {
   {
     display: block;
     position: absolute;
-    right: 0px;
+    right: 55px;
     top: 10px;
   }
 }
@@ -773,6 +786,7 @@ margin-bottom: 0px!important;
     margin-right: 0;
     margin-top: -8px;
   }
+
 }
 .open:not(.dropup)>.animated-dropdown-menu
 {
@@ -1438,6 +1452,7 @@ body.toggled {
 .navbar.easy-sidebar .nav.navbar-nav>li>a {
   padding: 10px 15px;
 }
+
 
 
 
