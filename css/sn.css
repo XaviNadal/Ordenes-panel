@@ -32,7 +32,7 @@ body {
   background-color:#2593E8
 }
 .skin-black .main-header>.navbar .nav>li>a {
-  color:#fff
+  color:#eee;
 }
 .skin-black .main-header>.navbar .nav>li>a:hover{
   background:#2593E8;
@@ -73,6 +73,11 @@ body {
   {
     margin-left: 0;
   }
+.navbar-brand {
+background-color: #2593E8 !important;
+
+}
+
 }
 @media (min-width:768px)
 {
@@ -199,6 +204,18 @@ hr {
     border-radius: .25em;
 }
 
+.label-tags {
+    background-color: #5cb85c;
+    padding: 6px 10px !important;
+}
+
+.label-tags > a {
+    color: #fff !important;
+}
+
+.label-tags, a:hover {
+    color: #eee !important;
+}
 
 .main-header
 {
@@ -211,12 +228,17 @@ hr {
   border: none;
   border-radius: 0;
   margin-bottom: 0;
-  margin-left: 230px;
   min-height: 50px;
   o-transition: margin-left .3s ease-in-out;
   transition: margin-left .3s ease-in-out;
   webkit-transition: margin-left .3s ease-in-out;
 }
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #1a4b76  !important;
+    background-color: #2593E8 !important;
+}
+
 .layout-top-nav .main-header>.navbar
 {
   margin-left: 0;
@@ -248,11 +270,29 @@ hr {
     border: 0;
     color: inherit;
   }
+.main-header .navbar .nav>li>a>.label {
+    font-size: 9px;
+    line-height: .9;
+    padding: 2px 3px;
+    position: absolute;
+    left: 28px !important;
+    right: inherit !important;
+    text-align: center;
+    top: 9px;
+  }
+
+
 }
 .main-header .navbar .nav>li.user>a>.fa,.main-header .navbar .nav>li.user>a>.glyphicon,.main-header .navbar .nav>li.user>a>.ion
 {
   margin-right: 5px;
 }
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #1a4b76 !important;
+}
+
 .main-header .navbar .nav>li>a>.label
 {
   font-size: 9px;
@@ -263,41 +303,19 @@ hr {
   text-align: center;
   top: 9px;
 }
-.main-header .logo
-{
-  display: block;
-  float: left;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  height: 50px;
-  line-height: 50px;
-  o-transition: width .3s ease-in-out;
-  overflow: hidden;
-  padding: 0 15px;
-  text-align: center;
-  transition: width .3s ease-in-out;
-  webkit-transition: width .3s ease-in-out;
-  width: 230px;
-}
-.main-header .logo .logo-lg
-{
-  display: block;
-}
-.main-header .logo .logo-mini
-{
-  display: none;
-}
+
+
+
 .main-header .navbar-brand
 {
-  color: #2593E8;
+  color: #eee!important;
 }
 .content-header
 {
   margin: 0 auto;
   padding: 25px 15px 2px 15px;
   position: relative;
-  width: 94%;
+  width: 99%;
 }
 .content-header>h1
 {
@@ -380,7 +398,7 @@ hr {
   {
     display: block;
     position: absolute;
-    right: 0px;
+    right: 55px;
     top: 10px;
   }
 }
@@ -768,6 +786,7 @@ margin-bottom: 0px!important;
     margin-right: 0;
     margin-top: -8px;
   }
+
 }
 .open:not(.dropup)>.animated-dropdown-menu
 {
@@ -832,7 +851,12 @@ margin-bottom: 0px!important;
 }
 
 .navbar>.container-fluid .navbar-brand {
-    margin-left: 0px !important;
+    margin-left: -15px !important;
+    background-color:#337ab7;
+    padding-right: 40px;
+    padding-left: 40px;
+    float: none;
+    line-height: 48px;
 }
 
 
@@ -868,14 +892,27 @@ margin-bottom: 0px!important;
   }
 }
 
+.navbar-inverse .navbar-toggle {
+    border-color: #2593E8 !important;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+border-color: #2593E8 !important;
+}
+
+@media (max-width: 767px) {
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #eee !important;
+}
+}
+
 .box
 {
   background: #ffffff;
-
   margin: 0 auto;
   margin-bottom: 20px;
   position: relative;
-  width: 95%;
+  width: 100%;
 }
 
 .box.box-info
@@ -1301,6 +1338,17 @@ padding: 0px;
 .margin {
   margin: 10px;
 }
+
+.pad-l {
+padding-left: 15px;
+}
+
+.pad-r {
+padding-right: 15px;
+}
+
+
+
 .margin-bottom {
   margin-bottom: 20px;
 }
@@ -1404,6 +1452,7 @@ body.toggled {
 .navbar.easy-sidebar .nav.navbar-nav>li>a {
   padding: 10px 15px;
 }
+
 
 
 
